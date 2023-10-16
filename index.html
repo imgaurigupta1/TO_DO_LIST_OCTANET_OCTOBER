@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@400;700&family=Quicksand:wght@300&family=Roboto+Slab&family=Satisfy&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	
+	<header>
+		<h1>Task List</h1>
+		<h3><input type="text" id="current-date" disabled></h3>
+		<br>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What have you planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
+
+			<div id="tasks">
+			</div>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
